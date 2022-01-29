@@ -3,6 +3,14 @@
 - Renomeie os arquivos .env.example para .env, um se encontra dentro do diretório src e o outro dentro do diretório raiz;
 - Após isso, dentro do arquivo .env, terá os campos necessários a serem preenchidos para a inicialização do docker;
 
+exemplo: 
+MYSQL_DATABASE=mysql
+MYSQL_USER=usuario1
+MYSQL_PASSWORD=1234
+MYSQL_ROOT_PASSWORD=1234
+SERVICE_TAGS=dev
+SERVICE_NAME=mysql
+
 <!-- inicio tabela -->
  .   | ./src
 --- | --- 
@@ -28,4 +36,6 @@ docker exec php php artisan migrate
  
  php artisan db:seed --class=ClienteSeeder 
 </code>
+
+
 
