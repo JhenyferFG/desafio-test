@@ -25,5 +25,7 @@ docker-compose up
 docker exec php php artisan key:generate
 
 docker exec php php artisan migrate
+ 
+ php artisan db:seed --class=ClienteSeeder 
 </code>
 
